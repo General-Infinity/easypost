@@ -4,3 +4,5 @@ FN = easypost
 CFLAGS = -O2 -Wall -lcurl -o ${FN}
 all:
 	${CC} ${CF} ${CFLAGS}
+clean:
+	rm ${FN}
