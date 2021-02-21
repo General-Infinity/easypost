@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <curl/curl.h>
- 
+#include <string.h>
+
 int main(int argc, char *argv[])
 {
   char var1[100], var2[100];
