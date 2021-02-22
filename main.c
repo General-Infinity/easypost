@@ -4,6 +4,10 @@
 
 int main(int argc, char *argv[])
 {
+  if (!argv[1]) {
+    printf("Error: You did not specify a link to post to!\n");
+    return 1;
+  }
   char var1[100], var2[100];
   char post[201];
   CURL *curl;
