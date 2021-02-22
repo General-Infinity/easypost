@@ -13,12 +13,13 @@ int main(int argc, char *argv[])
   if(curl) {
     curl_easy_setopt(curl, CURLOPT_URL, argv[1]);
     printf("name of the var:\n");
-    scanf("%s", var1);
+    gets(var1);
     strcat(post, var1);
     strcat(post, "=");
     printf("what are you going to post:\n");
-    scanf("%s", var2);
+    gets(var2);
     strcat(post, var2);
+    printf(post);
     curl_easy_setopt(curl, CURLOPT_POSTFIELDS, post);
  
     /* Perform the request, res will get the return code */ 
